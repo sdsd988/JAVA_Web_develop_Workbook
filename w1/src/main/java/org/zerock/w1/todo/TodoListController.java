@@ -19,6 +19,8 @@ public class TodoListController extends HttpServlet {
         System.out.println("todo/List");
         List<TodoDTO> dtoList = TodoService.INSTANCE.getList();
 
+
+
         req.setAttribute("list",dtoList);
         req.getRequestDispatcher("/WEB-INF/todo/list.jsp").forward(req,resp);
     }
