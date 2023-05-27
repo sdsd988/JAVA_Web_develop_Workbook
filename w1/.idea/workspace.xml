@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fa8f43e1-4e59-4af8-b794-a6316779e4e0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../jdbcex/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/.idea/webContexts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/.idea/webContexts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/src/main/java/org/zerock/jdbcex/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/src/main/java/org/zerock/jdbcex/dao/ConnectionUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/src/main/java/org/zerock/jdbcex/dao/TodoDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/src/main/java/org/zerock/jdbcex/domain/TodoVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/src/test/java/org/zerock/dao/ConnectTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/src/main/java/org/zerock/jdbcex/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/src/main/java/org/zerock/jdbcex/dao/ConnectionUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/src/main/java/org/zerock/jdbcex/dao/TodoDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/src/main/java/org/zerock/jdbcex/domain/TodoVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/src/test/java/org/zerock/dao/ConnectTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/zerock/w1/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/zerock/w1/HelloServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/zerock/w1/MyServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/zerock/w1/calc/CalcController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/zerock/w1/calc/InputController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/zerock/w1/calc/SampleServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/zerock/w1/todo/TodoListController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/zerock/w1/todo/TodoReadController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/zerock/w1/todo/TodoRegisterController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/zerock/w1/todo/dto/TodoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/zerock/w1/todo/service/TodoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/calc/calcResult.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/calc/input.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/classes/org/zerock/w1/HelloServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/classes/org/zerock/w1/MyServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/classes/org/zerock/w1/calc/CalcController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/classes/org/zerock/w1/calc/InputController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/classes/org/zerock/w1/calc/SampleServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/classes/org/zerock/w1/todo/TodoListController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/classes/org/zerock/w1/todo/TodoReadController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/classes/org/zerock/w1/todo/TodoRegisterController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/classes/org/zerock/w1/todo/dto/TodoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/classes/org/zerock/w1/todo/service/TodoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/todo/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/todo/read.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/todo/register.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/test.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/w1-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/w1-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w1/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w1/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w1/MyServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w1/calc/CalcController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w1/calc/InputController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w1/calc/SampleServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w1/todo/TodoListController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w1/todo/TodoReadController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w1/todo/TodoRegisterController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w1/todo/dto/TodoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w1/todo/service/TodoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/calc/calcResult.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/calc/input.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/todo/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/todo/read.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/todo/register.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/test.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2QNUnE9DWf5s4OF3vY72Nom2teH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.75" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.75" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="Gradle : org.zerock : w1-1.0-SNAPSHOT.war (exploded)">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="46b23126-9d6d-42c3-933d-ca68b3384a56" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="49987" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : org.zerock : w1-1.0-SNAPSHOT.war (exploded)" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa8f43e1-4e59-4af8-b794-a6316779e4e0" name="Changes" comment="" />
+      <created>1685193699398</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685193699398</updated>
+      <workItem from="1685193700579" duration="87000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
