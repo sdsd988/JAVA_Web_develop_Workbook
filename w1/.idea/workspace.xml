@@ -5,119 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa8f43e1-4e59-4af8-b794-a6316779e4e0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../jdbcex/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/.idea/webContexts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/.idea/webContexts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/src/main/java/org/zerock/jdbcex/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/src/main/java/org/zerock/jdbcex/dao/ConnectionUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/src/main/java/org/zerock/jdbcex/dao/TodoDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/src/main/java/org/zerock/jdbcex/domain/TodoVo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/jdbcex/src/test/java/org/zerock/dao/ConnectTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/src/main/java/org/zerock/jdbcex/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/src/main/java/org/zerock/jdbcex/dao/ConnectionUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/src/main/java/org/zerock/jdbcex/dao/TodoDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/src/main/java/org/zerock/jdbcex/domain/TodoVo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcex/src/test/java/org/zerock/dao/ConnectTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/gc.properties" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/calc/calcResult.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/calc/input.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/test.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/zerock/w1/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/zerock/w1/HelloServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/zerock/w1/MyServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/zerock/w1/calc/CalcController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/zerock/w1/calc/InputController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/zerock/w1/calc/SampleServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/zerock/w1/todo/TodoListController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/zerock/w1/todo/TodoReadController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/zerock/w1/todo/TodoRegisterController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/zerock/w1/todo/dto/TodoDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/zerock/w1/todo/service/TodoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/calc/calcResult.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/calc/input.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/classes/org/zerock/w1/HelloServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/classes/org/zerock/w1/MyServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/classes/org/zerock/w1/calc/CalcController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/classes/org/zerock/w1/calc/InputController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/classes/org/zerock/w1/calc/SampleServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/classes/org/zerock/w1/todo/TodoListController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/classes/org/zerock/w1/todo/TodoReadController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/classes/org/zerock/w1/todo/TodoRegisterController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/classes/org/zerock/w1/todo/dto/TodoDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/classes/org/zerock/w1/todo/service/TodoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/todo/list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/todo/read.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/todo/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/w1-1.0-SNAPSHOT.war/test.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/w1-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/w1-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w1/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w1/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w1/MyServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w1/calc/CalcController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w1/calc/InputController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w1/calc/SampleServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w1/todo/TodoListController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w1/todo/TodoReadController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w1/todo/TodoRegisterController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w1/todo/dto/TodoDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w1/todo/service/TodoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/calc/calcResult.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/calc/input.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/todo/list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/todo/read.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/todo/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/test.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +21,14 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -139,6 +39,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -147,6 +50,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2QNUnE9DWf5s4OF3vY72Nom2teH" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -156,9 +62,21 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.75" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.75" ALTERNATIVE_JRE_ENABLED="false">
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
@@ -258,7 +176,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685193699398</updated>
-      <workItem from="1685193700579" duration="87000" />
+      <workItem from="1685193700579" duration="3682000" />
     </task>
     <servers />
   </component>
