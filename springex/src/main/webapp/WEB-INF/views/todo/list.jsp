@@ -29,48 +29,32 @@
         <!--<h1>Header</h1>-->
         <div class="row content">
             <div class="col">
-
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Navbar</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                       data-bs-toggle="dropdown" aria-expanded="false">
-                                        Dropdown
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled">Disabled</a>
-                                </li>
-                            </ul>
-                            <form class="d-flex">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form>
-                        </div>
+                <div  class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Search</h5>
+                        <form action="/todo/list" method="get">
+                            <input type="hidden" name="size" value="${pageRequestDTO.size}">
+                            <div class="mb-3">
+                                <input type="checkbox" name="finished" ${pageReqestDTO.finished?"checked":""}> 완료여부
+                            </div>
+                            <div class="mb-3">
+                                <input type="checkbox" name="types" value="t" ${pageRequestDTO.checkType("t")?"checked":""}> 제목
+                                <input type="checkbox" name="types" value="w" ${pageRequestDTO.checkType("w")?"checked":""}> 작성자
+                                <input type="text" name="keyword" class="form-control" value='<c:out value="${pageRequestDTO.keyword}"/>'>
+                            </div>
+                            <div class="input-group mb-3 dueDateDiv">
+                                <input type="date" name="from" class="form-control" value="${pageRequestDTO.from}">
+                                <input type="date" name="to" class="form-control" value="${pageRequestDTO.to}">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="float-end">
+                                    <button class="btn btn-primary" type="submit">Search</button>
+                                    <button class="btn btn-info clearBtn" type="reset">Clear</button>
+                            </div>
+                            </div>
+                        </form>
                     </div>
-                </nav>
+                </div>
             </div>
         </div>
 
@@ -96,8 +80,10 @@
                             <c:forEach items="${responseDTO.dtoList}" var="dto">
                                 <tr>
                                     <th scope="row"><c:out value="${dto.tno}"/></th>
-                                    <td><a href="/todo/read?tno=${dto.tno}&${pageRequestDTO.link}" class="text-decoration-none" data-tno="${dto.tno}"><c:out
-                                            value="${dto.title}"/></a></td>
+                                    <td><a href="/todo/read?tno=${dto.tno}&${pageRequestDTO.link}" class="text-decoration-none" data-tno="${dto.tno}">
+                                        <c:out value="${dto.title}"/>
+                                    </a>
+                                    </td>
                                     <td><c:out value="${dto.writer}"/></td>
                                     <td><c:out value="${dto.dueDate}"/></td>
                                     <td><c:out value="${dto.finished}"/></td>
@@ -136,9 +122,20 @@
                                     }
                                     const num = target.getAttribute("data-num")
 
-                                    self.location = `/todo/list?page=\${num}`
+                                    const formObj = document.querySelector("form")
+
+                                    formObj.innerHTML += `<input type='hidden' name='page' value='\${num}'>`
+
+                                    formObj.submit();
+
                                 },false)
 
+                                document.querySelector(".clearBtn").addEventListener("click", function (e){
+                                    e.preventDefault()
+                                    e.stopPropagation()
+
+                                    self.location='/todo/list'
+                                },false)
                             </script>
 
                         </div>
