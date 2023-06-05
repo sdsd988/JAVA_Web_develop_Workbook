@@ -93,10 +93,10 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${dtoList}" var="dto">
+                            <c:forEach items="${responseDTO.dtoList}" var="dto">
                                 <tr>
                                     <th scope="row"><c:out value="${dto.tno}"/></th>
-                                    <td><a href="/todo/read?tno=${dto.tno}" class="text-decoration-none"><c:out
+                                    <td><a href="/todo/read?tno=${dto.tno}&${pageRequestDTO.link}" class="text-decoration-none" data-tno="${dto.tno}"><c:out
                                             value="${dto.title}"/></a></td>
                                     <td><c:out value="${dto.writer}"/></td>
                                     <td><c:out value="${dto.dueDate}"/></td>
@@ -105,7 +105,43 @@
                             </c:forEach>
                             </tbody>
                         </table>
-                    </div>
+
+                        <div class="float-end">
+                            <ul class="pagination flex-wrap">
+                                <c:if test="${responseDTO.prev}">
+                                    <li class="page-item">
+                                        <a class="page-link" data-num="${responseDTO.start -1}">Previous</a>
+                                    </li>
+                                </c:if>
+                                <c:forEach begin="${responseDTO.start}" end="${responseDTO.end}" var="num">
+                                <li class="page-item ${responseDTO.page == num ? "active":""}">
+                                    <a class="page-link" data-num="${num}"> ${num}</a> </li>
+                                </c:forEach>
+
+                                <c:if test="${responseDTO.next}">
+                                    <li class="page-item">
+                                        <a class="page-link" data-num="${responseDTO.end +1}">Next</a>
+                                    </li>
+                                </c:if>
+                            </ul>
+                            <script>
+                                document.querySelector(".pagination").addEventListener("click",function (e){
+                                    e.preventDefault()
+                                    e.stopPropagation()
+
+                                    const target = e.target
+
+                                    if(target.tagName !== 'A'){
+                                        return
+                                    }
+                                    const num = target.getAttribute("data-num")
+
+                                    self.location = `/todo/list?page=\${num}`
+                                },false)
+
+                            </script>
+
+                        </div>
 
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>

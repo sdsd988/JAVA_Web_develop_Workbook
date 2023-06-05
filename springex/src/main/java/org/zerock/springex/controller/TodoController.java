@@ -1,5 +1,6 @@
 package org.zerock.springex.controller;
 
+import lombok.Builder;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.modelmapper.ModelMapper;
@@ -10,6 +11,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.zerock.springex.dto.PageRequestDTO;
+import org.zerock.springex.dto.PageResponseDTO;
 import org.zerock.springex.dto.TodoDTO;
 import org.zerock.springex.service.TodoService;
 import org.zerock.springex.service.TodoServiceImpl;
@@ -20,17 +23,20 @@ import javax.validation.Valid;
 @RequestMapping("/todo")
 @Log4j2
 @RequiredArgsConstructor
+@Builder
 public class TodoController {
 
     private final TodoService todoService;
 
-    @RequestMapping("/list")
-    public void list(Model model) {
+    @GetMapping("/list")
+    public void list(@Valid PageRequestDTO pageRequestDTO, BindingResult bindingResult, Model model) {
 
-        log.info("todo list......");
+        log.info(pageRequestDTO);
 
-        model.addAttribute("dtoList", todoService.getAll());
-
+        if(bindingResult.hasErrors()){
+            pageRequestDTO =  PageRequestDTO.builder().build();
+        }
+        model.addAttribute("responseDTO", todoService.getList(pageRequestDTO));
     }
 
     @GetMapping("/register")
