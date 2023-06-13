@@ -1,15 +1,20 @@
 package org.zerock.b01.repository.search;
 
 import com.querydsl.core.BooleanBuilder;
+import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.jpa.JPQLQuery;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
+import org.springframework.util.StringUtils;
 import org.zerock.b01.domain.Board;
 import org.zerock.b01.domain.QBoard;
 
+import java.util.Arrays;
 import java.util.List;
+
+import static org.zerock.b01.domain.QBoard.*;
 
 public class BoardSearchImpl extends QuerydslRepositorySupport implements BoardSearch {
 
@@ -70,5 +75,23 @@ public class BoardSearchImpl extends QuerydslRepositorySupport implements BoardS
         long count = query.fetchCount();
 
         return new PageImpl<>(list,pageable,count);
+    }
+
+    private BooleanExpression eqTitle(String title){
+        if(StringUtils.hasText(title)){
+            return board.title.contains(title);
+        } return null;
+    }
+
+    private BooleanExpression eqContent(String content){
+        if(StringUtils.hasText(content)){
+            return board.content.contains(content);
+        } return null;
+    }
+
+    private BooleanExpression eqWriter(String writer){
+        if(StringUtils.hasText(writer)){
+            return board.writer.contains(writer);
+        } return null;
     }
 }
