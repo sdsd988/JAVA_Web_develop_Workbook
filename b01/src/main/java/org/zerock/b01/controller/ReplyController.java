@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.zerock.b01.dto.ReplyDTO;
 
 import javax.validation.Valid;
+import java.util.HashMap;
 import java.util.Map;
 
 @RestController
@@ -22,7 +23,7 @@ public class ReplyController {
 
     @ApiOperation(value = "Replies POST",notes = "POST 방식으로 댓글 등록")
     @PostMapping(value = "/",consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Map<String,Long>> register(@Valid @RequestBody ReplyDTO replyDTO,
+    public Map<String,Long> register(@Valid @RequestBody ReplyDTO replyDTO,
                                                      BindingResult bindingResult)throws BindException{
 
         log.info(replyDTO);
@@ -30,8 +31,9 @@ public class ReplyController {
         if (bindingResult.hasErrors()) {
             throw new BindException(bindingResult);
         }
-        Map<String, Long> resultMap = Map.of("rno", 111L);
+        Map<String, Long> resultMap = new HashMap<>();
+        resultMap.put("rno", 111L);
 
-        return ResponseEntity.ok(resultMap);
+        return resultMap;
     }
 }
