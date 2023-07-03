@@ -6,8 +6,6 @@ import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import org.springframework.ui.ModelMap;
 import org.zerock.b01.domain.Board;
 import org.zerock.b01.dto.BoardDTO;
 import org.zerock.b01.dto.BoardListReplyCountDTO;
@@ -15,9 +13,11 @@ import org.zerock.b01.dto.PageRequestDTO;
 import org.zerock.b01.dto.PageResponseDTO;
 import org.zerock.b01.repository.BoardRepository;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+
 
 @Service
 @Log4j2
@@ -26,10 +26,12 @@ import java.util.stream.Collectors;
 public class BoardServiceImpl implements BoardService{
 
     private final ModelMapper modelMapper;
+
     private final BoardRepository boardRepository;
 
     @Override
     public Long register(BoardDTO boardDTO) {
+
         Board board = modelMapper.map(boardDTO, Board.class);
 
         Long bno = boardRepository.save(board).getBno();
@@ -51,6 +53,7 @@ public class BoardServiceImpl implements BoardService{
 
     @Override
     public void modify(BoardDTO boardDTO) {
+
         Optional<Board> result = boardRepository.findById(boardDTO.getBno());
 
         Board board = result.orElseThrow();
@@ -58,13 +61,27 @@ public class BoardServiceImpl implements BoardService{
         board.change(boardDTO.getTitle(), boardDTO.getContent());
 
         boardRepository.save(board);
+
     }
 
     @Override
     public void remove(Long bno) {
 
         boardRepository.deleteById(bno);
+
     }
+
+//    @Override
+//    public PageResponseDTO<BoardDTO> list(PageRequestDTO pageRequestDTO) {
+//
+//        String[] types = pageRequestDTO.getTypes();
+//        String keyword = pageRequestDTO.getKeyword();
+//        Pageable pageable = pageRequestDTO.getPageable("bno");
+//
+//        Page<Board> result = boardRepository.searchAll(types, keyword, pageable);
+//
+//        return null;
+//    }
 
     @Override
     public PageResponseDTO<BoardDTO> list(PageRequestDTO pageRequestDTO) {
@@ -75,17 +92,21 @@ public class BoardServiceImpl implements BoardService{
 
         Page<Board> result = boardRepository.searchAll(types, keyword, pageable);
 
-        List<BoardDTO> dtoList = result.getContent().stream().map(board -> modelMapper.map(board, BoardDTO.class)).collect(Collectors.toList());
+        List<BoardDTO> dtoList = result.getContent().stream()
+                .map(board -> modelMapper.map(board,BoardDTO.class)).collect(Collectors.toList());
+
 
         return PageResponseDTO.<BoardDTO>withAll()
                 .pageRequestDTO(pageRequestDTO)
                 .dtoList(dtoList)
                 .total((int)result.getTotalElements())
                 .build();
+
     }
 
     @Override
     public PageResponseDTO<BoardListReplyCountDTO> listWithReplyCount(PageRequestDTO pageRequestDTO) {
+
         String[] types = pageRequestDTO.getTypes();
         String keyword = pageRequestDTO.getKeyword();
         Pageable pageable = pageRequestDTO.getPageable("bno");
@@ -98,4 +119,6 @@ public class BoardServiceImpl implements BoardService{
                 .total((int)result.getTotalElements())
                 .build();
     }
+
+
 }

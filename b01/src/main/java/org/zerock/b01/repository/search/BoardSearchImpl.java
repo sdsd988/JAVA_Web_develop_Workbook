@@ -2,38 +2,40 @@ package org.zerock.b01.repository.search;
 
 import com.querydsl.core.BooleanBuilder;
 import com.querydsl.core.types.Projections;
-import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.jpa.JPQLQuery;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
-import org.springframework.util.StringUtils;
 import org.zerock.b01.domain.Board;
 import org.zerock.b01.domain.QBoard;
 import org.zerock.b01.domain.QReply;
 import org.zerock.b01.dto.BoardListReplyCountDTO;
 
-import java.util.Arrays;
 import java.util.List;
-
-import static org.zerock.b01.domain.QBoard.*;
-import static org.zerock.b01.domain.QReply.reply;
 
 public class BoardSearchImpl extends QuerydslRepositorySupport implements BoardSearch {
 
-    public BoardSearchImpl() {
+    public BoardSearchImpl(){
         super(Board.class);
     }
 
     @Override
     public Page<Board> search1(Pageable pageable) {
 
-        QBoard board = QBoard.board; //Q 도메인 객체
+        QBoard board = QBoard.board;
 
-        JPQLQuery<Board> query = from(board); //select .. from board
+        JPQLQuery<Board> query = from(board);
 
-        query.where(board.title.contains("1")); //where title like..
+        BooleanBuilder booleanBuilder = new BooleanBuilder(); // (
+
+        booleanBuilder.or(board.title.contains("11")); // title like ...
+
+        booleanBuilder.or(board.content.contains("11")); // content like ....
+
+        query.where(booleanBuilder);
+        query.where(board.bno.gt(0L));
+
 
         //paging
         this.getQuerydsl().applyPagination(pageable, query);
@@ -42,17 +44,23 @@ public class BoardSearchImpl extends QuerydslRepositorySupport implements BoardS
 
         long count = query.fetchCount();
 
+
         return null;
+
     }
 
     @Override
     public Page<Board> searchAll(String[] types, String keyword, Pageable pageable) {
+
         QBoard board = QBoard.board;
         JPQLQuery<Board> query = from(board);
-        if((types != null && types.length>0) && keyword !=null){ // 검색 조건과 키워드가 있다면
-            BooleanBuilder booleanBuilder = new BooleanBuilder();
 
-            for (String type : types) {
+        if( (types != null && types.length > 0) && keyword != null ){ //검색 조건과 키워드가 있다면
+
+            BooleanBuilder booleanBuilder = new BooleanBuilder(); // (
+
+            for(String type: types){
+
                 switch (type){
                     case "t":
                         booleanBuilder.or(board.title.contains(keyword));
@@ -64,9 +72,9 @@ public class BoardSearchImpl extends QuerydslRepositorySupport implements BoardS
                         booleanBuilder.or(board.writer.contains(keyword));
                         break;
                 }
-            } //end for
+            }//end for
             query.where(booleanBuilder);
-        } // end if
+        }//end if
 
         //bno > 0
         query.where(board.bno.gt(0L));
@@ -78,22 +86,27 @@ public class BoardSearchImpl extends QuerydslRepositorySupport implements BoardS
 
         long count = query.fetchCount();
 
-        return new PageImpl<>(list,pageable,count);
-    }
+        return new PageImpl<>(list, pageable, count);
 
+    }
 
     @Override
     public Page<BoardListReplyCountDTO> searchWithReplyCount(String[] types, String keyword, Pageable pageable) {
+
+        QBoard board = QBoard.board;
+        QReply reply = QReply.reply;
 
         JPQLQuery<Board> query = from(board);
         query.leftJoin(reply).on(reply.board.eq(board));
 
         query.groupBy(board);
 
-        if((types != null && types.length>0) && keyword !=null){ // 검색 조건과 키워드가 있다면
-            BooleanBuilder booleanBuilder = new BooleanBuilder();
+        if( (types != null && types.length > 0) && keyword != null ){
 
-            for (String type : types) {
+            BooleanBuilder booleanBuilder = new BooleanBuilder(); // (
+
+            for(String type: types){
+
                 switch (type){
                     case "t":
                         booleanBuilder.or(board.title.contains(keyword));
@@ -105,18 +118,22 @@ public class BoardSearchImpl extends QuerydslRepositorySupport implements BoardS
                         booleanBuilder.or(board.writer.contains(keyword));
                         break;
                 }
-            } //end for
+            }//end for
             query.where(booleanBuilder);
-        } // end if
+        }
 
+        //bno > 0
         query.where(board.bno.gt(0L));
 
-
         JPQLQuery<BoardListReplyCountDTO> dtoQuery = query.select(Projections.bean(BoardListReplyCountDTO.class,
-                board.bno, board.title, board.writer, board.regDate,
-                reply.count().as("replyCount")));
+                board.bno,
+                board.title,
+                board.writer,
+                board.regDate,
+                reply.count().as("replyCount")
+        ));
 
-        this.getQuerydsl().applyPagination(pageable, dtoQuery);
+        this.getQuerydsl().applyPagination(pageable,dtoQuery);
 
         List<BoardListReplyCountDTO> dtoList = dtoQuery.fetch();
 
@@ -125,21 +142,7 @@ public class BoardSearchImpl extends QuerydslRepositorySupport implements BoardS
         return new PageImpl<>(dtoList, pageable, count);
     }
 
-    private BooleanExpression eqTitle(String title){
-        if(StringUtils.hasText(title)){
-            return board.title.contains(title);
-        } return null;
-    }
-
-    private BooleanExpression eqContent(String content){
-        if(StringUtils.hasText(content)){
-            return board.content.contains(content);
-        } return null;
-    }
-
-    private BooleanExpression eqWriter(String writer){
-        if(StringUtils.hasText(writer)){
-            return board.writer.contains(writer);
-        } return null;
-    }
 }
+
+
+

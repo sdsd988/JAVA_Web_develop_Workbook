@@ -54,7 +54,7 @@ class ReplyRepositoryTest {
         ReplyDTO replyDTO = ReplyDTO.builder()
                 .replyText("ReplyDTO Text")
                 .replyer("replyer")
-                .bno(101L)
+                .bno(100L)
                 .build();
 
         log.info(replyService.register(replyDTO));
