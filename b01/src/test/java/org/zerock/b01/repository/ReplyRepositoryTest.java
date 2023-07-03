@@ -10,6 +10,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.zerock.b01.domain.Board;
 import org.zerock.b01.domain.Reply;
+import org.zerock.b01.dto.ReplyDTO;
+import org.zerock.b01.service.ReplyService;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -20,6 +22,9 @@ class ReplyRepositoryTest {
 
     @Autowired
     private ReplyRepository replyRepository;
+
+    @Autowired
+    private ReplyService replyService;
 
     @Test
     void testInsert(){
@@ -42,5 +47,16 @@ class ReplyRepositoryTest {
         Page<Reply> result = replyRepository.listOfBoard(bno, pageable);
 
         result.getContent().forEach(reply -> log.info(reply));
+    }
+
+    @Test
+    void testRegister(){
+        ReplyDTO replyDTO = ReplyDTO.builder()
+                .replyText("ReplyDTO Text")
+                .replyer("replyer")
+                .bno(101L)
+                .build();
+
+        log.info(replyService.register(replyDTO));
     }
 }

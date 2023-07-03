@@ -18,7 +18,7 @@ public class Reply extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long rno;
-    
+
 
     @ManyToOne(fetch = FetchType.LAZY)
     private Board board;
