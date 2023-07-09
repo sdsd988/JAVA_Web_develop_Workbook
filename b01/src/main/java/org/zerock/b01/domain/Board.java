@@ -3,6 +3,8 @@ package org.zerock.b01.domain;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -29,5 +31,8 @@ public class Board extends BaseEntity{
         this.content = content;
     }
 
+    @OneToMany
+    @Builder.Default
+    private Set<BoardImage> imageSet = new HashSet<>();
 
 }
