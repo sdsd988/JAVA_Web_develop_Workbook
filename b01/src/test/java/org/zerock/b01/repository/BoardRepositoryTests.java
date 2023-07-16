@@ -9,6 +9,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.zerock.b01.domain.Board;
+import org.zerock.b01.domain.BoardImage;
 import org.zerock.b01.dto.BoardListReplyCountDTO;
 
 import java.util.List;
@@ -180,4 +181,21 @@ public class BoardRepositoryTests {
 
         boardRepository.save(board);
     }
+
+    @Test
+    public void testReadWithImages() {
+
+        Optional<Board> result = boardRepository.findByIdWithImage(1L);
+
+        Board board = result.orElseThrow();
+
+        log.info(board);
+        log.info("-------------------");
+
+        for (BoardImage boardImage : board.getImageSet()) {
+            log.info(boardImage);
+
+        }
+    }
+
 }
