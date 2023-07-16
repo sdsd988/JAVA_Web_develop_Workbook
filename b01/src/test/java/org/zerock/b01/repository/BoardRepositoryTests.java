@@ -8,6 +8,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.test.annotation.Commit;
+import org.springframework.transaction.annotation.Transactional;
 import org.zerock.b01.domain.Board;
 import org.zerock.b01.domain.BoardImage;
 import org.zerock.b01.dto.BoardListReplyCountDTO;
@@ -23,6 +25,10 @@ public class BoardRepositoryTests {
 
     @Autowired
     private BoardRepository boardRepository;
+
+    @Autowired
+    private ReplyRepository replyRepository;
+
 
     @Test
     public void testInsert(){
@@ -197,5 +203,38 @@ public class BoardRepositoryTests {
 
         }
     }
+
+    @Transactional
+    @Commit
+    @Test
+    public void testModifyImages() {
+        Optional<Board> result = boardRepository.findByIdWithImage(1L);
+
+        Board board = result.orElseThrow();
+
+        board.clearImages();
+
+        for (int i = 0; i < 2; i++) {
+
+            board.addImage(UUID.randomUUID().toString(), "updatefile" + i + ".jpg");
+        }
+        boardRepository.save(board);
+    }
+
+
+    @Transactional
+    @Commit
+    @Test
+
+    public void testRemovalAll() {
+        Long bno = 1L;
+
+        replyRepository.deleteByBoard_Bno(bno);
+
+        boardRepository.deleteById(bno);
+
+
+    }
+
 
 }
